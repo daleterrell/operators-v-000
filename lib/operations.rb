@@ -3,14 +3,13 @@ def unsafe?(speed)
     return true
   elsif speed < 40
     return true
-  elsif speed.between? (40-60)
+  elsif speed.between?(40, 60)
     return false
-end
-end
+  end
 end
 
 def not_safe?(speed)
-	speed  > 60 ? speed < 40 : true
+#	speed  > 60 ? speed < 40 : true
 end
 
 
